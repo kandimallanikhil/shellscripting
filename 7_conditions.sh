@@ -64,7 +64,7 @@ then
 else
 	echo "no vote"
 fi
-comment
+# comment
 ========================================
 read -p "enter the age : " age
 read -p "enetr the country: " country
@@ -75,9 +75,32 @@ else
         echo "no vote"
 fi
 
+comment
+# ==========================================================================
 
-
-
+# if and else conditions.
+#
+read age
+[ $age -ge 19 ] && echo "adult" || echo "minor"
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 
 
 
