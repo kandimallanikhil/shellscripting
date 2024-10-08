@@ -15,7 +15,6 @@ echo "hello"
 hhbschsbdv
 
 dkvbc;cv
-cv
 dxvc
 dxv
 d
