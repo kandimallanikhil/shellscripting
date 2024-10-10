@@ -1,0 +1,46 @@
+
+
+
+
+
+Step 1 : we need to install 2 software
+
+  1. postfix
+  2. mailx
+Step 2 :  Add the below line in this path.
+-->  cd /etc/postfix/main.cf
+relayhost = [smtp.gmail.com]:587
+myhostname= your_hostname; to get hostname we ned to use: hostname.
+
+Step 3: We need to add these in the same file.
+--> main.cf
+smtp_sasl_password_maps = hash:/etc/postfix/sasl/sasl_passwd
+smtp_sasl_auth_enable = yes
+smtp_tls_security_level = encrypt
+smtp_sasl_security_options = noanonymous
+
+Step 4 : We need to create a folder if it was not there
+mkdir -p /etc/postfix/sasl/
+
+Step 5 : we need to create a file :" sasl_passwd " this is how we need to add multiple user email.
+[smtp.gmail.com]:587 kandimallanikhil@gmail.com:password
+[smtp.gmail.com]:587 email1@gmail.com:password1
+[smtp.gmail.com]:587 email2@gmail.com:password2
+  
+step 6: As this is a secrued password  we can remove the read permission to every 
+chmod 600 /etc/postfix/sasl_passwd
+
+step 7 : Run the following command to create the database file from
+
+--> sudo postmap /etc/postfix/sasl_passwd
+step 8 : now check the status of postfix.services
+--> systemctl start postfix.services
+--> systemctl status postfix.services
+
+Step 9: Send a email
+
+--> echo " send a email " | mail -s " this will be the subject of the mail " kandimallanikhil@gmail.com.
+
+
+
+ 

@@ -29,3 +29,15 @@
 # we need to use ============================= CRONTAB ================================================
 # :wq
 #
+#To see available cronjobs : crontab -l
+#To edit the cronjob : crontab -e
+#++ In this we should add the file name and cron tab.
+#
+#    ***** cd /root/shell/ && ./filename.sh 
+#
+#
+#
+#
+#
+#
+#
