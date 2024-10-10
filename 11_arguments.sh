@@ -4,14 +4,16 @@
 #This is used to paasargument at the time of execution
 #
 #
-<<comment
+#
+set -x
+#<<comment
 echo "my name is $1"
 echo " my name is $1 $2"
 echo "list of all variables are $@ " # ---------- We will use """ @ """ to print alll the variable presnt
 echo " to knoe the number of variables $#" # ------- we use """# """" to know number of avariablers
 
 # at the time of executin we should give in this way sh filename.sh nikhil kandimalla passes this are the arguments
-comment
+#comment
  # ---------------------------
  #
  # Inputs while passing at the time of arguments
