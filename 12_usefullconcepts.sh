@@ -40,7 +40,7 @@ do
 	echo " odd number is $i"
 
 done
-comment
+#comment
 ############################# ======================================= ##############################################
 # =========================  EXIT ==================================================
 if [ $# -eq 0 ]
@@ -66,7 +66,40 @@ echo $#
 echo $? 
 # this will show the exit code of previous code.
 # """  #? """ which means it will show status of last code
+comment
+
+# ==================================  Base Name ========================
+# strip directory info and give only file name
+# Eg : 
 #
+
+b=$(basename /root/shell/file.txt)
+echo " file path of basename is : $b"
+
+# in the above commande it will give only file name that is """ FILE.TXT""" by removing the directory.
+#
+# =================================== dirname =================
+dirname /root/shell/file.txt
+
+# it will show the only path of theis file.
+#
+# ================================= realpath ==========================
+realpath file
+# this will give the path of the file or our current path.
+
+#===============================================================================================================================
+#
+#=============================== RANDOM ========================================
+#
+echo  " we need a value :  $RANDOM "
+# this will print a raondom number in between o to 32767
+#
+# ================================== UID ========================
+echo " WE NEED A UID :  $UID "
+
+# this will print the uid if user loged in
+#
+
 #
 #
 #
