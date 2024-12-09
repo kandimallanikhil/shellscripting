@@ -5,11 +5,7 @@
 #
 #We will us If - Else loops ========================================================
 #
-<<comment
-read -p "enter the number:........." mark
-
-if  [ $mark -gt 40 ] # there should be space in the starting of the sysntax
-	# "-gt" :  means greather then 
+# "-gt" :  means greather then 
 	#-eq : equal
 	#-ge : greather then or equals
 	#-le : less then or equal
@@ -23,6 +19,13 @@ Operator	Description	Example
 -lt	Less than	if [ $a -lt $b ]
 -ge	Greater than or equal to	if [ $a -ge $b ]
 -le	Less than or equal to	if [ $a -le $b ]
+
+
+<<comment
+read -p "enter the number:........." mark
+
+if  [ $mark -gt 40 ] # there should be space in the starting of the sysntax
+	
  
 then
 	echo "paas"
