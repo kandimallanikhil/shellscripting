@@ -10,11 +10,20 @@ read -p "enter the number:........." mark
 
 if  [ $mark -gt 40 ] # there should be space in the starting of the sysntax
 	# "-gt" :  means greather then 
-	#-eg/== : equal
+	#-eq : equal
 	#-ge : greather then or equals
 	#-le : less then or equal
 	#-ne/!= : not Equal
 	#-lt : less than
+Common Numeric Comparison Operators:
+Operator	Description	Example
+-eq	Equal to	if [ $a -eq $b ]
+-ne	Not equal to	if [ $a -ne $b ]
+-gt	Greater than	if [ $a -gt $b ]
+-lt	Less than	if [ $a -lt $b ]
+-ge	Greater than or equal to	if [ $a -ge $b ]
+-le	Less than or equal to	if [ $a -le $b ]
+ 
 then
 	echo "paas"
 else
