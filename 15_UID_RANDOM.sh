@@ -13,7 +13,7 @@ else
 	echo "fail"
 fi
 # ===============================================	UID to check if it was root ===============
-#
+# root user UID == 0
 if [[ $UID -eq 0 ]]
 then 
 	echo "$UID"
